@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+       <form action="#" method="post">
+           <h2 th:text="#{login.tip}">请登录</h2>
+           <span th:text="#{login.username}">username</span><input type="text" name="username"/>
+           <span th:text="#{login.password}">password</span><input type="password" name="word"/>
+       </form>
+
+       <h3>国际化测试</h3>>
+       <span><a th:href="@{/login(l='zh_CN')}" href="#">中文</a></span>
+       <span><a th:href="@{/login(l='en_US')}" href="#">英文</a></span>
+
+</body>
+</html>
